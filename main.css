@@ -1,0 +1,85 @@
+body{
+	margin: 0;
+	padding: 2em;
+}
+@media screen {
+	main{
+		display: grid;
+		grid-template-columns: 25% 75%;
+		grid-template-rows: min-content 1fr;
+		grid-template-areas: "toc main" "relate main";
+	}
+	article{
+		grid-area: main;
+	}
+	aside#toc{
+		grid-area: toc;
+	}
+	aside#relate{
+		grid-area: relate;
+	}
+}
+.figure{
+	width: 100%;
+}
+aside>ul{
+	list-style-type: none;
+}
+aside a{
+	text-decoration: none;
+}
+article{
+	margin: 0 0 1em 1em;
+	padding: 0.5em;
+}
+aside{
+	margin: 0 1em 1em 0;
+	padding: 1em;
+}
+footer{
+	padding: 0.5em;
+	text-align: center;
+}
+footer>p{
+	display: inline-block;
+}
+h3{
+	display: inline-block;
+}
+code{
+	display: inline-block;
+	outline-style: solid;
+	outline-width: 1px;
+	outline-offset: 1px;
+}
+address{
+	font-style: normal;
+}
+/* 
+chiruno 配色方案，颜色来自 https://www.pixiv.net/artworks/82303140
+#
+*/
+code{
+	background-color: #ffffff;
+	outline-color: #e1eaef;
+}
+aside{
+	background-color: #fed615;
+	color: #5a6a04;
+}
+footer{
+	background-color: #248efe;
+	color: #fff2e9;
+}
+h2,h3{
+	background-color: #ffee54;
+}
+article{
+	background-color: #fff2e9;
+}
+body{
+	background-color: #b3e5ee;
+}
+li>a:hover{
+	background-color: #fff2e9;
+}
