@@ -1,0 +1,4 @@
+Sitemap: http://jingkaimori.top/sitemap.xml
+Disallow: /README
+Disallow: /LICENSE
+Disallow: /.git
